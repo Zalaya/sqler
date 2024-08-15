@@ -1,0 +1,8 @@
+### IDE configuration directories ###
+
+.idea/
+.vscode/
+
+### Build directories ###
+
+target/
