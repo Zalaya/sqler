@@ -3,7 +3,6 @@
 .idea/
 .vscode/
 
-### Gradle ###
+### Maven build directories ###
 
-.gradle/
-build/
+target/
