@@ -3,6 +3,7 @@
 .idea/
 .vscode/
 
-### Build directories ###
+### Gradle ###
 
-target/
+.gradle/
+build/
