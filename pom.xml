@@ -17,6 +17,12 @@
         <maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
     </properties>
 
+    <modules>
+        <module>sqler-domain</module>
+        <module>sqler-application</module>
+        <module>sqler-infrastructure</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>
