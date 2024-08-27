@@ -49,10 +49,10 @@ public class CSVFileMapperService implements FileMapperService {
         List<Record> records = new ArrayList<>();
 
         for (int i = 0; i < columns.size(); i++) {
-            records.add(new Record(data[i]));
+            records.add(new Record(columns.get(i), data[i]));
         }
 
-        return new Row(columns.get(0), records);
+        return new Row(records);
     }
 
     private List<String[]> readAll(InputStream stream) {

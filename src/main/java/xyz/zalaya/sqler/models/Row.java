@@ -11,11 +11,9 @@ import java.util.List;
 @ToString
 public class Row {
 
-    private final Column column;
     private final List<Record> records;
 
-    public Row(Column column, List<Record> records) {
-        this.column = column;
+    public Row(List<Record> records) {
         this.records = records;
     }
 

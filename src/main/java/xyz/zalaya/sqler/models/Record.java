@@ -9,9 +9,11 @@ import lombok.ToString;
 @ToString
 public class Record {
 
+    private final Column column;
     private final Comparable<?> value;
 
-    public Record(Comparable<?> value) {
+    public Record(Column column, Comparable<?> value) {
+        this.column = column;
         this.value = value;
     }
 
