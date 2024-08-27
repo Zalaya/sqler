@@ -1,4 +1,4 @@
-package xyz.zalaya.sqler.services;
+package xyz.zalaya.sqler.services.mapper;
 
 import xyz.zalaya.sqler.models.Table;
 
@@ -6,6 +6,6 @@ import java.io.InputStream;
 
 public interface FileMapperService {
 
-    Table map(String fileName, String fileExtension, InputStream stream);
+    Table map(String fullFileName, InputStream stream);
 
 }

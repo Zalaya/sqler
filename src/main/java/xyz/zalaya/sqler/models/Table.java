@@ -14,12 +14,12 @@ public class Table {
 
     private final String name;
     private final List<Column> columns;
-    private final List<Row> records;
+    private final List<Row> rows;
 
-    public Table(String name, List<Column> columns, List<Row> records) {
+    public Table(String name, List<Column> columns, List<Row> rows) {
         this.name = name;
         this.columns = columns;
-        this.records = records;
+        this.rows = rows;
     }
 
     public Table(String name) {
