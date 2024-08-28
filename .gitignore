@@ -6,11 +6,3 @@
 ### IDE configuration files ###
 
 *.iml
-
-### Maven ###
-
-target/
-
-### Spring Boot Template ###
-
-HELP.md
