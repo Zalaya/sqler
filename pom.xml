@@ -13,6 +13,7 @@
 
     <properties>
         <java.version>17</java.version>
+        <lombok.version>1.18.34</lombok.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -21,4 +22,12 @@
         <module>sqler-application</module>
         <module>sqler-infrastructure</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+    </dependencies>
 </project>
