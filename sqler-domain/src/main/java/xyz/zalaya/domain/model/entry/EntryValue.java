@@ -3,21 +3,15 @@ package xyz.zalaya.domain.model.entry;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
-import xyz.zalaya.domain.exception.InvalidEntryValueException;
+import xyz.zalaya.domain.model.common.Value;
 
 @Getter
-@EqualsAndHashCode
-@ToString
-public class EntryValue {
-
-    private final String value;
+@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true)
+public class EntryValue extends Value {
 
     public EntryValue(String value) {
-        if (value == null || value.trim().isEmpty()) {
-            throw new InvalidEntryValueException("Entry value cannot be null or empty");
-        }
-
-        this.value = value;
+        super(value);
     }
 
 }
