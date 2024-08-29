@@ -17,7 +17,6 @@
     </properties>
 
     <modules>
-
         <module>sqler-domain</module>
         <module>sqler-application</module>
         <module>sqler-infrastructure</module>
