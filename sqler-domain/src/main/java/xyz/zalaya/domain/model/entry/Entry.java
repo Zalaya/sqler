@@ -3,23 +3,19 @@ package xyz.zalaya.domain.model.entry;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
+import xyz.zalaya.domain.model.common.type.SqlType;
 
 @Getter
 @EqualsAndHashCode
 @ToString
 public class Entry {
 
-    private final EntryType type;
     private final EntryValue value;
-
-    public Entry(EntryType type, EntryValue value) {
-        this.type = type;
-        this.value = value;
-    }
+    private final SqlType type;
 
     public Entry(EntryValue value) {
-        this.type = null;
         this.value = value;
+        this.type = SqlType.fromEntryValue(value);
     }
 
 }
