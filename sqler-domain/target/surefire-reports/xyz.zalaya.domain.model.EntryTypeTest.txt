@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: xyz.zalaya.domain.model.EntryTypeTest
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s -- in xyz.zalaya.domain.model.EntryTypeTest
