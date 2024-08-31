@@ -1,7 +1,9 @@
 package core.main.java.domain.model;
 
 import shared.main.java.domain.annotation.AggregateRoot;
+import shared.main.java.domain.annotation.Entity;
 
+@Entity
 @AggregateRoot
 public class Table {
 
