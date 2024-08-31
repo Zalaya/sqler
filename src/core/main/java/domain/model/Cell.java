@@ -15,6 +15,11 @@ public class Cell {
         this.type = new CellType(type);
     }
 
+    public Cell(String value) {
+        this.value = new CellValue(value);
+        this.type = new CellType("None");
+    }
+
     public String getValue() {
         return value.getValue();
     }
