@@ -1,7 +1,7 @@
-package core.main.java.domain.model;
+package core.main.java.domain.model.cell;
 
-import core.main.java.domain.model.vo.CellType;
-import core.main.java.domain.model.vo.CellValue;
+import core.main.java.domain.model.cell.vo.CellType;
+import core.main.java.domain.model.cell.vo.CellValue;
 import shared.main.java.domain.annotation.Entity;
 
 @Entity

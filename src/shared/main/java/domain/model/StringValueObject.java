@@ -1,16 +1,14 @@
 package shared.main.java.domain.model;
 
-import shared.main.java.domain.exception.InvalidStringValueException;
-
 import java.util.Objects;
 
 public abstract class StringValueObject {
 
     private final String value;
 
-    public StringValueObject(String value) {
+    protected StringValueObject(String value) {
         if (value == null || value.trim().isEmpty()) {
-            throw new InvalidStringValueException(value);
+            throw new IllegalArgumentException("Value cannot be null or empty");
         }
 
         this.value = value;
