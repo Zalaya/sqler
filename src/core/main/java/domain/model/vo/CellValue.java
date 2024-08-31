@@ -1,12 +1,12 @@
-package core.main.java.domain.model;
+package core.main.java.domain.model.vo;
 
 import shared.main.java.domain.annotation.ValueObject;
 import shared.main.java.domain.model.StringValueObject;
 
 @ValueObject
-public class TableName extends StringValueObject {
+public class CellValue extends StringValueObject {
 
-    public TableName(String value) {
+    public CellValue(String value) {
         super(value);
     }
 
