@@ -1,5 +1,8 @@
 package domain.vo;
 
+import domain.annotation.ValueObject;
+
+@ValueObject
 public class TableName extends StringValueObject {
 
     public TableName(String value) {

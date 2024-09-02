@@ -17,4 +17,8 @@ public class Row {
         return values;
     }
 
+    public void addValue(String value) {
+        values.add(value);
+    }
+
 }

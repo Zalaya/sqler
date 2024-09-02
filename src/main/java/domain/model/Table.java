@@ -39,4 +39,12 @@ public class Table {
         return rows;
     }
 
+    public void addColumn(Column column) {
+        columns.add(column);
+    }
+
+    public void addRow(Row row) {
+        rows.add(row);
+    }
+
 }
