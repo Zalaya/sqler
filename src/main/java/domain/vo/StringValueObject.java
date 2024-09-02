@@ -13,12 +13,12 @@ public abstract class StringValueObject {
         this.value = value;
     }
 
-    public String getValue() {
-        return value;
-    }
-
     public boolean isEmpty() {
         return value.isEmpty();
+    }
+
+    public String getValue() {
+        return value;
     }
 
     @Override
