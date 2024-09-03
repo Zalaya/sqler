@@ -20,18 +20,24 @@ public class Column {
         this.values = values;
     }
 
+    public Column(String name, List<String> values) {
+        this.name = ColumnName.of(name);
+        this.type = ColumnType.empty();
+        this.values = values;
+    }
+
     public Column(String name) {
         this.name = ColumnName.of(name);
         this.type = ColumnType.empty();
         this.values = new ArrayList<>();
     }
 
-    public String getName() {
-        return name.getValue();
+    public ColumnName getName() {
+        return name;
     }
 
-    public String getType() {
-        return type.getValue();
+    public ColumnType getType() {
+        return type;
     }
 
     public List<String> getValues() {
@@ -40,6 +46,16 @@ public class Column {
 
     public void addValue(String value) {
         values.add(value);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+
+        builder.append("Column name: ").append(name).append("\n");
+        values.forEach(value -> builder.append(value).append("\n"));
+
+        return builder.toString();
     }
 
 }

@@ -34,4 +34,13 @@ public abstract class StringValueObject {
         return Objects.hash(value);
     }
 
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+
+        builder.append(value).append("\n");
+
+        return builder.toString();
+    }
+
 }

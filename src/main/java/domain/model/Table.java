@@ -27,8 +27,8 @@ public class Table {
         this.rows = new ArrayList<>();
     }
 
-    public String getName() {
-        return name.getValue();
+    public TableName getName() {
+        return name;
     }
 
     public List<Column> getColumns() {
@@ -39,12 +39,15 @@ public class Table {
         return rows;
     }
 
-    public void addColumn(Column column) {
-        columns.add(column);
-    }
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
 
-    public void addRow(Row row) {
-        rows.add(row);
+        builder.append("Table name: ").append(name).append("\n");
+        columns.forEach(column -> builder.append(column).append("\n"));
+        rows.forEach(row -> builder.append(row).append("\n"));
+
+        return builder.toString();
     }
 
 }
