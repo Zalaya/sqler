@@ -14,7 +14,6 @@
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.jupiter.version>5.11.0</junit.jupiter.version>
-        <mockito.version>5.13.0</mockito.version>
         <opencsv.version>5.9</opencsv.version>
         <maven.surefire.plugin.version>3.4.0</maven.surefire.plugin.version>
         <maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
@@ -37,12 +36,6 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>${junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>${mockito.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
