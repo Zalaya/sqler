@@ -22,7 +22,6 @@ public class CsvFileReaderAdapter implements FileReaderPort {
     public Table read(File file) {
         try (CSVReader reader = new CSVReaderBuilder(new FileReader(file)).withCSVParser(new CSVParserBuilder().withSeparator(';').build()).build()) {
             List<String[]> data = reader.readAll();
-
             return new Table(file.getName(), getColumns(data), getRows(data));
         } catch (IOException | CsvException e) {
             return new Table(file.getName());
@@ -42,7 +41,9 @@ public class CsvFileReaderAdapter implements FileReaderPort {
     }
 
     private List<Row> getRows(List<String[]> data) {
-        return data.stream().skip(1).map(rowData -> new Row(Stream.of(rowData).map(String::trim).toList())).toList();
+        return data.stream().skip(1).map(rowData -> new Row(
+            Stream.of(rowData).map(String::trim).toList())
+        ).toList();
     }
 
 }

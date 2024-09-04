@@ -1,4 +1,7 @@
-Name; Age; City
-John; 25; New York
-Anna; 30; London
-Peter; 45; Paris
+Name;Age;City
+John;25;New York
+Anna;30;
+;45;Paris
+;;;
+Mark;22;Berlin
+Emily;Invalid Data;Tokyo
