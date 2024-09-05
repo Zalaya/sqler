@@ -12,7 +12,7 @@ import domain.port.outbound.FileReaderPort;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -22,15 +22,29 @@ public class CsvFileReaderAdapter implements FileReaderPort {
     public Table read(File file) {
         try (CSVReader reader = new CSVReaderBuilder(new FileReader(file)).withCSVParser(new CSVParserBuilder().withSeparator(';').build()).build()) {
             List<String[]> data = reader.readAll();
-            return new Table(file.getName(), getColumns(data), getRows(data));
+            List<Column> columns = getHeaders(data);
+
+            return new Table(file.getName().split("\\.")[0], getColumns(data, columns), getRows(data));
         } catch (IOException | CsvException e) {
-            return new Table(file.getName());
+            return new Table(file.getName().split("\\.")[0]);
         }
     }
 
-    private List<Column> getColumns(List<String[]> data) {
-        List<Column> columns = Arrays.stream(data.get(0)).map(header -> new Column(header.trim())).toList();
+    private List<Column> getHeaders(List<String[]> data) {
+        List<Column> columns = new ArrayList<>();
 
+        if (data.isEmpty() || data.get(0) == null) {
+            return columns;
+        }
+
+        for (String header : data.get(0)) {
+            columns.add(new Column(header.trim()));
+        }
+
+        return columns;
+    }
+
+    private List<Column> getColumns(List<String[]> data, List<Column> columns) {
         for (int i = 1; i < data.size(); i++) {
             for (int j = 0; j < data.get(i).length; j++) {
                 columns.get(j).addValue(data.get(i)[j].trim());
