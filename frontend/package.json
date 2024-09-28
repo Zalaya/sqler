@@ -1,5 +1,5 @@
 {
-    "name": "frontend",
+    "name": "sqler-frontend",
     "private": true,
     "version": "0.0.0",
     "type": "module",
@@ -7,7 +7,8 @@
         "dev": "vite",
         "build": "tsc -b && vite build",
         "lint": "eslint .",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "clean": "rm -rf node_modules dist"
     },
     "dependencies": {
         "react": "^18.3.1",
