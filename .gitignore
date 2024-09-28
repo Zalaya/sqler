@@ -10,3 +10,8 @@
 ### Maven ###
 
 target/
+
+### Node.js ###
+
+node_modules/
+dist/
