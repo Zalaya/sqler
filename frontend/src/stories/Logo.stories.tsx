@@ -19,20 +19,20 @@ type Story = StoryObj<StoryProps>;
 export const Small: Story = {
     args: {
         size: "sm",
-        color: true
+        hasColor: true
     }
 };
 
 export const Medium: Story = {
     args: {
         size: "md",
-        color: true
+        hasColor: true
     }
 };
 
 export const Large: Story = {
     args: {
         size: "lg",
-        color: true
+        hasColor: true
     }
 };
