@@ -1,4 +1,6 @@
-interface LogoProps {
+import LogoImage from "../assets/Logo.png";
+
+type LogoProps = {
     size?: "sm" | "md" | "lg";
 }
 
@@ -10,8 +12,8 @@ const sizeMap = {
 
 export const Logo = ({ size = "md" }: LogoProps) => {
     return (
-        <a href="/" className={sizeMap[size]}>
-            <img src="../assets/Logo.png" alt="Logo"></img>
+        <a href="/">
+            <img src={LogoImage} alt="Logo" className={sizeMap[size]}></img>
         </a>
     )
 }
