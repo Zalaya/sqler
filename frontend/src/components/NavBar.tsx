@@ -1,5 +1,3 @@
-const NavBar = () => {
+export const NavBar = () => {
 
 }
-
-export default NavBar;
