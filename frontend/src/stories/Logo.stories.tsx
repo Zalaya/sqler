@@ -6,8 +6,10 @@ import { fn } from "@storybook/test";
 type StoryProps = ComponentProps<typeof Logo>;
 
 const meta: Meta<StoryProps> = {
+    title: "Logo",
     component: Logo,
     args: {
+        hasColor: true,
         onClick: fn()
     }
 };
