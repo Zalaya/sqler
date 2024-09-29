@@ -5,7 +5,7 @@ import { Meta, StoryObj } from "@storybook/react";
 type StoryProps = ComponentProps<typeof Logo>;
 
 const meta: Meta<StoryProps> = {
-    component: Logo,
+    component: Logo
 };
 
 export default meta;
@@ -14,18 +14,21 @@ type Story = StoryObj<StoryProps>;
 
 export const Small: Story = {
     args: {
-        size: "sm"
+        size: "sm",
+        color: true
     }
 };
 
 export const Medium: Story = {
     args: {
-        size: "md"
+        size: "md",
+        color: true
     }
 };
 
 export const Large: Story = {
     args: {
-        size: "lg"
+        size: "lg",
+        color: true
     }
 };
