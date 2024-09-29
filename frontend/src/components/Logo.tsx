@@ -4,9 +4,10 @@ import LogoNoColor from "../assets/LogoNoColor.png";
 type LogoProps = {
     size?: "xs"| "sm" | "md" | "lg" | "xl" | "2xl" | "3xl";
     color?: boolean;
+    onClick?: () => void;
 }
 
-const sizeMap = {
+const sizeMap: Record<NonNullable<LogoProps["size"]>, string> = {
     "xs": "h-6 w-6",
     "sm": "h-8 w-8",
     "md": "h-12 w-12",
@@ -16,12 +17,13 @@ const sizeMap = {
     "3xl": "h-32 w-32",
 };
 
-export const Logo = ({ size, color }: LogoProps) => {
+export const Logo = ({ size, color, onClick }: LogoProps) => {
     return (
         <img
             src={ color ? LogoColor : LogoNoColor }
             alt="Logo"
             className={ sizeMap[size] }
+            onClick={ onClick }
         />
     )
 }
