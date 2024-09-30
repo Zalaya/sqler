@@ -1,5 +1,5 @@
-import LogoColor from "../assets/LogoColor.png";
-import LogoNoColor from "../assets/LogoNoColor.png";
+import LogoColored from "../assets/loco-colored.png";
+import LogoMonochrome from "../assets/logo-monochrome.png";
 
 type LogoProps = {
     size?: "xs"| "sm" | "md" | "lg" | "xl" | "2xl" | "3xl";
@@ -20,10 +20,10 @@ const sizeMap: Record<NonNullable<LogoProps["size"]>, string> = {
 export const Logo = ({ size = "md", hasColor = true, onClick }: LogoProps) => {
     return (
         <img
-            src={ hasColor ? LogoColor : LogoNoColor }
-            alt="Logo"
-            className={ sizeMap[size] }
-            onClick={ onClick }
+            src = { hasColor ? LogoColored : LogoMonochrome }
+            alt = "Logo"
+            className = { sizeMap[size] }
+            onClick = { onClick }
         />
     )
 }
