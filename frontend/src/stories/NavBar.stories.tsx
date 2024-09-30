@@ -6,15 +6,25 @@ type StoryProps = ComponentProps<typeof NavBar>;
 
 const meta: Meta<StoryProps> = {
     title: "NavBar",
-    component: NavBar
+    component: NavBar,
+    args: {
+        opacity: 100,
+        minOpacity: 50
+    }
 };
 
 export default meta;
 
 type Story = StoryObj<StoryProps>;
 
-export const Default: Story = {
+export const WithLogo: Story = {
     args: {
+        hasLogo: true
+    }
+};
 
+export const WithoutLogo: Story = {
+    args: {
+        hasLogo: false
     }
 };
