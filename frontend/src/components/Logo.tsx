@@ -20,10 +20,10 @@ const sizeMap: Record<NonNullable<LogoProps["size"]>, string> = {
 export const Logo = ({ size = "md", hasColor = true, onClick }: LogoProps) => {
     return (
         <img
-            src = { hasColor ? LogoColored : LogoMonochrome }
-            alt = "Logo"
-            className = { sizeMap[size] }
-            onClick = { onClick }
+            src={ hasColor ? LogoColored : LogoMonochrome }
+            alt="Logo"
+            className={ sizeMap[size] }
+            onClick={ onClick }
         />
     )
 }
