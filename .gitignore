@@ -11,6 +11,11 @@
 
 target/
 
+### Gradle ###
+
+build/
+.gradle/
+
 ### Node.js ###
 
 node_modules/
@@ -19,5 +24,3 @@ dist/
 ### TypeScript ###
 
 *.tsbuildinfo
-
-*storybook.log
