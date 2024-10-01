@@ -1,4 +1,4 @@
-import { Logo } from "./Logo.tsx";
+import { Logo } from "../ui/Logo.tsx";
 
 type NavBarProps = {
     hasLogo?: boolean;

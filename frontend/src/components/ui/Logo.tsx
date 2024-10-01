@@ -1,5 +1,5 @@
-import LogoColored from "../assets/loco-colored.png";
-import LogoMonochrome from "../assets/logo-monochrome.png";
+import LogoColored from "../../assets/loco-colored.png";
+import LogoMonochrome from "../../assets/logo-monochrome.png";
 
 type LogoProps = {
     size?: "xs"| "sm" | "md" | "lg" | "xl" | "2xl" | "3xl";

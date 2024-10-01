@@ -1,6 +1,6 @@
 import { ComponentProps } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { NavBar } from "../components/NavBar.tsx";
+import { NavBar } from "../components/layout/NavBar.tsx";
 
 type StoryProps = ComponentProps<typeof NavBar>;
 

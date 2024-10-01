@@ -1,4 +1,4 @@
-import { Logo } from "../components/Logo.tsx";
+import { Logo } from "../components/ui/Logo.tsx";
 import { ComponentProps } from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
