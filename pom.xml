@@ -20,6 +20,5 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-boot.version>3.3.4</spring-boot.version>
-        <lombok.version>1.18.34</lombok.version>
     </properties>
 </project>

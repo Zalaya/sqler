@@ -32,10 +32,5 @@
             <artifactId>spring-boot-devtools</artifactId>
             <version>${spring-boot.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-        </dependency>
     </dependencies>
 </project>
