@@ -13,4 +13,12 @@
     </parent>
 
     <artifactId>application</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>xyz.zalaya.sqler</groupId>
+            <artifactId>domain</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
