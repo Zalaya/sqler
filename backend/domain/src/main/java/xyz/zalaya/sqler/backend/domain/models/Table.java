@@ -9,12 +9,6 @@ public class Table {
     private final List<Column> columns;
     private final List<Row> rows;
 
-    public Table(String name, List<Column> columns, List<Row> rows) {
-        this.name = name;
-        this.columns = columns;
-        this.rows = rows;
-    }
-
     public Table(String name) {
         this.name = name;
         this.columns = new ArrayList<>();
@@ -29,8 +23,16 @@ public class Table {
         return columns;
     }
 
+    public void addColumn(Column column) {
+        columns.add(column);
+    }
+
     public List<Row> getRows() {
         return rows;
+    }
+
+    public void addRow(Row row) {
+        rows.add(row);
     }
 
 }
