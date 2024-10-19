@@ -2,6 +2,10 @@ package xyz.zalaya.sqler.backend.domain.models;
 
 import java.util.List;
 
+/**
+ * Represents a column in a table.
+ * It is contained in a {@link Table}.
+ */
 public class Column {
 
     private final String name;

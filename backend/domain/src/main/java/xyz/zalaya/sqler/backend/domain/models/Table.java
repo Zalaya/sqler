@@ -3,6 +3,9 @@ package xyz.zalaya.sqler.backend.domain.models;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Represents a table in a database.
+ */
 public class Table {
 
     private final String name;
