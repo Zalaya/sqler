@@ -1,11 +1,9 @@
 package xyz.zalaya.sqler.backend.domain.models;
 
+import xyz.zalaya.sqler.backend.domain.annotations.Entity;
 import xyz.zalaya.sqler.backend.domain.enumerators.SqlType;
 
-/**
- * Represents a registry in a table.
- * It is contained in a {@link Row} or a {@link Column}.
- */
+@Entity
 public class Registry {
 
     private final String value;

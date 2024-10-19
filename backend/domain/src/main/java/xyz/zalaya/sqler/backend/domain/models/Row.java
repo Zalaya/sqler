@@ -1,12 +1,11 @@
 package xyz.zalaya.sqler.backend.domain.models;
 
+import xyz.zalaya.sqler.backend.domain.annotations.Entity;
+
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Represents a row in a table.
- * It is contained in a {@link Table}.
- */
+@Entity
 public class Row {
 
     private final List<Registry> registries;

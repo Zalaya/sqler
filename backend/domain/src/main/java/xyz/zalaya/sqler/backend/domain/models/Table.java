@@ -1,11 +1,11 @@
 package xyz.zalaya.sqler.backend.domain.models;
 
+import xyz.zalaya.sqler.backend.domain.annotations.AggregateRoot;
+
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Represents a table in a database.
- */
+@AggregateRoot
 public class Table {
 
     private final String name;

@@ -1,14 +1,12 @@
 package xyz.zalaya.sqler.backend.domain.models;
 
+import xyz.zalaya.sqler.backend.domain.annotations.Entity;
 import xyz.zalaya.sqler.backend.domain.enumerators.SqlType;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Represents a column in a table.
- * It is contained in a {@link Table}.
- */
+@Entity
 public class Column {
 
     private final String name;
