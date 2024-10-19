@@ -20,5 +20,6 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-boot.version>3.3.4</spring-boot.version>
+        <opencsv.version>5.9</opencsv.version>
     </properties>
 </project>

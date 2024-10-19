@@ -1,20 +1,20 @@
 package xyz.zalaya.sqler.backend.domain.models;
 
 import xyz.zalaya.sqler.backend.domain.annotations.Entity;
-import xyz.zalaya.sqler.backend.domain.enumerators.SqlType;
+import xyz.zalaya.sqler.backend.domain.enumerators.SQLType;
 
 @Entity
 public class Registry {
 
-    private final SqlType type;
+    private final SQLType type;
     private final String value;
 
-    public Registry(SqlType type, String value) {
+    public Registry(SQLType type, String value) {
         this.type = type;
         this.value = value;
     }
 
-    public SqlType getType() {
+    public SQLType getType() {
         return type;
     }
 

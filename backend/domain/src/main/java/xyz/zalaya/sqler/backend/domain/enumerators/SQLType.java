@@ -1,6 +1,6 @@
 package xyz.zalaya.sqler.backend.domain.enumerators;
 
-public enum SqlType {
+public enum SQLType {
 
     INTEGER,
     DECIMAL,
