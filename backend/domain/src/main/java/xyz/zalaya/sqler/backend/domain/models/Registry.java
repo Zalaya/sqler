@@ -6,20 +6,20 @@ import xyz.zalaya.sqler.backend.domain.enumerators.SqlType;
 @Entity
 public class Registry {
 
-    private final String value;
     private final SqlType type;
+    private final String value;
 
-    public Registry(String value, SqlType type) {
-        this.value = value;
+    public Registry(SqlType type, String value) {
         this.type = type;
-    }
-
-    public String getValue() {
-        return value;
+        this.value = value;
     }
 
     public SqlType getType() {
         return type;
+    }
+
+    public String getValue() {
+        return value;
     }
 
 }
