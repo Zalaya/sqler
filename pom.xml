@@ -12,7 +12,10 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>backend</module>
+        <module>domain</module>
+        <module>application</module>
+        <module>infrastructure</module>
+        <module>bootstrap</module>
     </modules>
 
     <properties>
@@ -20,6 +23,35 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-boot.version>3.3.4</spring-boot.version>
-        <opencsv.version>5.9</opencsv.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>xyz.zalaya.sqler</groupId>
+                <artifactId>application</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>xyz.zalaya.sqler</groupId>
+                <artifactId>domain</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>xyz.zalaya.sqler</groupId>
+                <artifactId>infrastructure</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
