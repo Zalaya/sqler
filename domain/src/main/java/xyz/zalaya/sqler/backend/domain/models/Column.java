@@ -1,7 +1,7 @@
 package xyz.zalaya.sqler.backend.domain.models;
 
 import xyz.zalaya.sqler.backend.domain.annotations.Entity;
-import xyz.zalaya.sqler.backend.domain.enumerators.SQLType;
+import xyz.zalaya.sqler.backend.domain.enumerators.SqlType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,10 +10,10 @@ import java.util.List;
 public class Column {
 
     private final String name;
-    private final SQLType type;
+    private final SqlType type;
     private final List<Registry> registries;
 
-    public Column(String name, SQLType type) {
+    public Column(String name, SqlType type) {
         this.name = name;
         this.type = type;
         this.registries = new ArrayList<>();
@@ -23,7 +23,7 @@ public class Column {
         return name;
     }
 
-    public SQLType getType() {
+    public SqlType getType() {
         return type;
     }
 
