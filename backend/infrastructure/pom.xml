@@ -19,9 +19,5 @@
             <groupId>xyz.zalaya.sqler</groupId>
             <artifactId>application</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.opencsv</groupId>
-            <artifactId>opencsv</artifactId>
-        </dependency>
     </dependencies>
 </project>
