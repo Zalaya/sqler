@@ -6,7 +6,3 @@
 ### IDE configuration files ###
 
 *.iml
-
-### Maven ###
-
-target/
